@@ -2,8 +2,10 @@ import vk
 import time
 import datetime
 
+
+
 print('VKBot')
-session = vk.Session('9762256ffcbadf09c708027e3bd4e90e82241d5f19c94a3a65b16c85934485d1cdf2518a04fc02e618f94')
+session = vk.AuthSession('5698477','+79613101622','k27081997kaluzni',scope='messages')
 api = vk.API(session)
 lastcomand=''
 date_time_string = datetime.datetime.now().strftime('[%Y-%m-%d %H:%M:%S]')
